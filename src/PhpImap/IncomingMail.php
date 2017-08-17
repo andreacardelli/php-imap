@@ -26,6 +26,7 @@ class IncomingMail {
 	public $textPlain;
 	public $textHtml;
 	/** @var IncomingMailAttachment[] */
+	/** made public instead of protected */
 	public $attachments = array();
 
 	public function addAttachment(IncomingMailAttachment $attachment) {
